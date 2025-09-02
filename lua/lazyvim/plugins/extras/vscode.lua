@@ -40,8 +40,8 @@ vim.api.nvim_create_autocmd("User", {
     vim.keymap.set("n", "<leader>ss", [[<cmd>lua require('vscode').action('workbench.action.gotoSymbol')<cr>]])
 
     -- Navigate VSCode tabs like lazyvim buffers
-    vim.keymap.set("n", "<S-h>", "<Cmd>call VSCodeNotify('workbench.action.previousEditor')<CR>")
-    vim.keymap.set("n", "<S-l>", "<Cmd>call VSCodeNotify('workbench.action.nextEditor')<CR>")
+    vim.keymap.set("n", "<S-h>", [[<cmd>lua require('vscode').action('workbench.action.previousEditor')<cr>]])
+    vim.keymap.set("n", "<S-l>", [[<cmd>lua require('vscode').action('workbench.action.nextEditor')<cr>]])
   end,
 })
 
